@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Group B Cat 3</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <div class="toggle-Btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedoffer">EXPENSE TRACKER</span>
+            </div>
+            <div class="navItem" id="menuList">
+                <h3 class="menuItem"><a href="index.html">HOME</a></h3>
+                <h3 class="menuItem"><a href="about.html">ABOUT</a></h3>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="sidebar" style="display: none;">
+        <h3 class="menuItem"><a href="index.html">HOME</a></h3>
+        <h3 class="menuItem"><a href="about.html">ABOUT</a></h3>
+    </div>
+
+
+    <div class="main"></div>
+    <div class="input-section">
+        <label for="categories">Category:</label>
+        <select  id="categories">
+            <option value="">Select Category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Health">Health</option>
+        </select>
+        <label for="name-of-product">Name:</label>
+        <input type="text" id="name-of-product">
+        <label for="amount-of-product">Amount:</label>
+        <input type="number" id="amount-of-product">
+        <button id="add-btn">ADD</button>
+     </div>
+     <div class="expense-list">
+        <h2>Expenses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Grandtotal:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+     </div>   
+
+    <footer class="footinginnit">
+        <h3>SIT 109 Group B CAT 3</h3>
+        <p>Copyright @2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
