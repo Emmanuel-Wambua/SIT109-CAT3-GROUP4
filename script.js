@@ -13,6 +13,17 @@ menuIcon.onclick = function smallenside(){
     }
 }
 
+document.querySelector(".viewmembers").addEventListener("click", function() {
+    const list = document.getElementById("memberList");
+    if (list.style.display === "none") {
+        list.style.display = "block";
+        this.textContent = "Hide Members";
+    } else {
+        list.style.display = "none";
+        this.textContent = "View Members";
+    }
+});
+
 let expenses = [];
 let Grandtotal = 0;
 
